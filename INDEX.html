@@ -57,6 +57,46 @@
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
+        /* 媒體查詢: 用來調整手機和平板顯示 */
+        @media (max-width: 768px) {
+            .header {
+                font-size: 28px;
+                padding: 15px 0;
+            }
+            .event-title {
+                font-size: 20px;
+            }
+            .event-description {
+                font-size: 16px;
+            }
+            .image-container img {
+                width: 150px; /* 調整圖片大小 */
+            }
+            .container {
+                padding: 80px 10px 10px; /* 減少空白區域 */
+            }
+        }
+
+        /* 媒體查詢: 用於小螢幕的手機 */
+        @media (max-width: 480px) {
+            .header {
+                font-size: 24px;
+                padding: 10px 0;
+            }
+            .event-title {
+                font-size: 18px;
+            }
+            .event-description {
+                font-size: 14px;
+            }
+            .image-container img {
+                width: 120px; /* 更小的圖片大小 */
+            }
+            .container {
+                padding: 60px 5px 5px; /* 進一步調整空白區域 */
+            }
+        }
     </style>
 </head>
 <body>
