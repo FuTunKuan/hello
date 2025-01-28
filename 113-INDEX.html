@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>113年 (甲辰年) 聖事回顧</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            z-index: 1000;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+            padding: 100px 20px 20px; /* 加入 padding 以避免被固定標題遮擋 */
+        }
+        .event-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .event-description {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .image-container {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 媒體查詢: 用來調整手機和平板顯示 */
+        @media (max-width: 768px) {
+            .header {
+                font-size: 28px;
+                padding: 15px 0;
+            }
+            .event-title {
+                font-size: 20px;
+            }
+            .event-description {
+                font-size: 16px;
+            }
+            .image-container img {
+                width: 150px; /* 調整圖片大小 */
+            }
+            .container {
+                padding: 80px 10px 10px; /* 減少空白區域 */
+            }
+        }
+
+        /* 媒體查詢: 用於小螢幕的手機 */
+        @media (max-width: 480px) {
+            .header {
+                font-size: 24px;
+                padding: 10px 0;
+            }
+            .event-title {
+                font-size: 18px;
+            }
+            .event-description {
+                font-size: 14px;
+            }
+            .image-container img {
+                width: 120px; /* 更小的圖片大小 */
+            }
+            .container {
+                padding: 60px 5px 5px; /* 進一步調整空白區域 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">113年 (甲辰年) 聖事回顧</div>
+    <div id="event-container" class="container">
+        <!-- 事件內容將由 JavaScript 動態載入 -->
+    </div>
+
+    <script>
+        const events = [
+            {
+                title: "2024/01/16 社團法人新北市奉天天上聖母協會",
+                description: `113年01月16 日，社團法人新北市奉天天上聖母協會申請成立。<br>
+                            地址：新北市五股區民義路二段43巷34號新莊奉天宮。<br>
+                            本協會的宗旨：本協會以宣揚 天上聖母 濟公活佛 太子元帥 提倡尊聖孝道奉神明祭祀並舉辦道教慶典 道場法會為宗旨。`,
+                images: ["Event_01-01.jpg", "Event_01-02.jpg", "Event_01-03.jpg", "Event_01-04.jpg", "Event_01-05.jpg"]
+            },
+            {
+                title: "2024/02/18 玉皇大帝聖誕暨甲辰年祭改補運點燈祈福活動",
+                description: ` <br> <br> `,
+                images: ["Event_02-01.jpg", "Event_02-02.jpg", "Event_02-03.jpg", "Event_02-04.jpg", "Event_02-05.jpg", "Event_02-06.jpg", "Event_02-07.jpg"]
+            },
+            {
+                title: "2024/04/28 天上聖母&武財神聖誕千秋",
+                description: ` <br> <br> `,
+                images: ["Event_03-01.jpg", "Event_03-02.jpg", "Event_03-03.jpg", "Event_03-04.jpg", "Event_03-05.jpg"]
+            },
+            {
+                title: "2024/07/06 第一次委員會議",
+                description: `委員會成立了，推選出主任委員、副主任委員、總幹事及各組組長。<br>
+                            為奉天宮所有神明奉獻來推動宮裡的建設及祭祝事宜。`,
+                images: ["Event_04-01.jpg", "Event_04-02.jpg", "Event_04-03.jpg"]
+            },
+            {
+                title: "2024/08/24 中元普渡前置作業",
+                description: `感謝宮內的師兄師姐及友宮威聖堂的師兄師姐們一起完成普渡前佈置。`,
+                images: ["Event_05-01.jpg", "Event_05-02.jpg", "Event_05-03.jpg", "Event_05-04.jpg", "Event_05-05.jpg", "Event_05-06.jpg"]
+            },
+            {
+                title: "2024/08/25 中元普渡法會",
+                description: `感謝宮內的師兄師姐一起出力圓滿完成今年度的普渡法會。`,
+                images: ["Event_06-01.jpg", "Event_06-02.jpg", "Event_06-03.jpg", "Event_06-04.jpg", "Event_06-05.jpg", "Event_06-06.jpg", "Event_06-07.jpg"]
+            },
+            {
+                title: "2024/11/09 下元水官大帝聖誕",
+                description: `下元水官大帝聖誕這天，宮內也試做了一次個人補財庫。<br>
+                            預計乙已年將會開辦，讓信眾報名參與。`,
+                images: ["Event_07-01.jpg", "Event_07-02.jpg", "Event_07-03.jpg", "Event_07-04.jpg", "Event_07-05.jpg", "Event_07-06.jpg"]
+            },
+            {
+                title: "2025/01/29 建廟公告大圖輸出",
+                description: `將未來廟裡建設大事列出要做的項目，<br>
+                            讓所有信眾能夠很清楚知，並一同參與。`,
+                images: ["Event_09-01.jpg", "Event_09-02.jpg"]
+            },            {
+                title: "2025/01/19 大掃除",
+                description: `又要過新年了，廟裡進行大掃除，也為神明正衣裝並清理檯面。<br>
+                            感謝威聖堂郭美智師姐帶領的師兄師姐團隊一起為神明服務。`,
+                images: ["Event_08-01.jpg", "Event_08-02.jpg", "Event_08-03.jpg", "Event_08-04.jpg", "Event_08-05.jpg", "Event_08-06.jpg", "Event_08-07.jpg", "Event_08-08.jpg", "Event_08-09.jpg", "Event_08-10.jpg", "Event_08-11.jpg"]
+            }
+        ];
+
+        let currentEventIndex = 0;
+
+        function loadEvent(index) {
+            const eventContainer = document.getElementById('event-container');
+            const event = events[index];
+            
+            eventContainer.innerHTML = `
+                <div class="event-title">${event.title}</div>
+                <div class="event-description">${event.description}</div>
+                <div class="image-container">
+                    ${event.images.map(image => `<img src="${image}" alt="${event.title}">`).join('')}
+                </div>
+            `;
+        }
+
+        function startSlideshow() {
+            loadEvent(currentEventIndex);
+            setInterval(() => {
+                currentEventIndex = (currentEventIndex + 1) % events.length;
+                loadEvent(currentEventIndex);
+            }, 8000); // 每8秒切換
+        }
+
+        startSlideshow();
+    </script>
+</body>
+</html>
